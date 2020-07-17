@@ -143,14 +143,18 @@ h1, p, .name, .bio {
 }
 
 header a{
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 header img{
     height: 50%;
 }
 
 nav{
-    width: 40%;     
+    width : 45%;     
+}
+nav span{
+    border-left:2px solid #626262;
+
 }
 .title-container hr{
     width:100%;

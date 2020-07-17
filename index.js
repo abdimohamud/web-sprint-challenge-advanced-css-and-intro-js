@@ -241,7 +241,8 @@ console.log(getArtistByIndex(artists, 8))
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
 function get20s(data){
-  data
+  const datapoints = artists.years
+  
 
   /* Code here */
 
@@ -281,11 +282,13 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(id2, name2, years2, gender2, nationality2, bio2){
-  const add = artists.push({id:id2, name:name2, years:years2, gender ) 
+function addArtist(id2, name2, years2, genre2, nationality2, bio2){
+  const add = artists.push({id:id2, name:name2, years:years2, genre:genre2, nationality:nationality2, bio:bio2});
+    return artists.length;
     /* Code here */
 
   }
+console.log(addArtist(20, "Abdi", "1999-","web design", "Somali", "lorem ipsum"))
 
 /* Task 7: Create a function called lotsOfArt() that takes one argument: 
 
@@ -295,7 +298,8 @@ and returns an array with names of artists who painted more than 100 paintings.
 
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
-function lotsOfArt(/* Code here */){
+function lotsOfArt(array){
+
 
   /* Code here */
 

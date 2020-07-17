@@ -208,10 +208,15 @@ const artists = [
 (1) Name of the first artist (0th index) in the array
 (2) Bio of the third artist (2nd index) in the array */
 
+console.log(artists[0].name)
+console.log(artists[2].bio)
+
 
 
 /* Task 2: There is a typo in your dataset 😱 The 9th artist, Vincent Van Gogh is currently Vincent Van Dough. Use an array method to fix this issue and console.log() to check your work. */
 
+artists[8].name = "Vincent Van Gogh"
+console.log(artists[8].name)
 
 
 /* Task 3: Create a function called `getArtistByIndex` that takes two arguments:
@@ -223,15 +228,20 @@ const artists = [
  * it will return `The artist at index 0 is Amedeo Modigliani`.
 */
 function getArtistByIndex(array, index) {
-    /* code here */
+  const name = array[index].name;
+  const id = array[index].id;
+  return `The artist at index ${id} is ${name}.`;
+
   }
+console.log(getArtistByIndex(artists, 8))
   
   /**
 
 
 /* Task 4: Create a function called get20s() that takes data as an argument and returns an array with names of artists who were born in and died in 20th century (1900-2000) example born in 1901 and died in 1959 - included / born in 1889 and died in 1925 not included - should return ["Salvador Dali", "Frida Kahlo"]*/
 
-function get20s(/* Code here */){
+function get20s(data){
+  data
 
   /* Code here */
 
@@ -248,10 +258,14 @@ function get20s(/* Code here */){
  * 
  * Note that sucessfully invoking this function multiple times without refreshing your browser will continuously remove artists from the array until there are none left. If you refresh your browser, the data will reset.  
 */
-function removeArtist(/*code here*/) {
+function removeArtist(array, index) {
+  const remove = array.splice(index,1);
+  const {} = array[index];
+  return array.length;
     /* code here */
   }
-  
+ console.log( removeArtist(artists, 1))
+ 
  
 
 /**
@@ -267,8 +281,8 @@ bio: Add 1-2 sentences (or use lorem ipsum)
 
 At the end, this function should return the new array with information added"*/
 
-function addArtist(/* Code here */){
-
+function addArtist(id2, name2, years2, gender2, nationality2, bio2){
+  const add = artists.push({id:id2, name:name2, years:years2, gender ) 
     /* Code here */
 
   }

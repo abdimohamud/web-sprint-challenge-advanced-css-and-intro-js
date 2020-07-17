@@ -134,3 +134,40 @@ button:hover{
 .artist img{
     width:100%;
 }
+
+/* CSS Media Querie for 500px*/
+@media(max-width: 500px){
+
+header a{
+    font-size: 2rem;
+}
+nav{
+    width:50%;     
+}
+.artists-container{
+    flex-flow: column wrap;
+    align-items: center;
+}
+.title-container div {
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    width: 100%;
+
+}
+.title-container h1{
+    font-size: 4rem;
+}
+.title-container hr{
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0;
+
+}
+.bio{
+    font-size: 75%;
+}
+.artist{
+    width: 100%;
+}
+
+}

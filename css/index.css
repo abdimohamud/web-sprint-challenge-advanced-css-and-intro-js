@@ -138,11 +138,22 @@ button:hover{
 /* CSS Media Querie for 500px*/
 @media(max-width: 500px){
 
-header a{
-    font-size: 2rem;
+h1, p, .name, .bio {
+    font-size: 75%;
 }
+
+header a{
+    font-size: 1.5rem;
+}
+header img{
+    height: 50%;
+}
+
 nav{
-    width:50%;     
+    width: 40%;     
+}
+.title-container hr{
+    width:100%;
 }
 .artists-container{
     flex-flow: column wrap;
@@ -152,22 +163,32 @@ nav{
     margin-top: 5%;
     margin-bottom: 2.5%;
     width: 100%;
+    height:50vh;
 
 }
 .title-container h1{
-    font-size: 4rem;
+    font-size: 3.5rem;
+    text-align: center;
 }
-.title-container hr{
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0;
 
-}
-.bio{
-    font-size: 75%;
-}
+
 .artist{
-    width: 100%;
+    width:75%;
+    
+}
+.artist img{
+    width:75%;
+    height: 75%;
+}
+.artist a {
+    font-size: 80%;
+}
+.bio {
+    font-size: 60%;
+    line-height: 1;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 }
+

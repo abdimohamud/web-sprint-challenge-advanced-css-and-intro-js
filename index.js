@@ -242,7 +242,7 @@ console.log(getArtistByIndex(artists, 8))
 
 function get20s(data){
   const datapoints = artists.years
-  
+
 
   /* Code here */
 
@@ -299,11 +299,20 @@ and returns an array with names of artists who painted more than 100 paintings.
 For example lotsOfArt(artists); will return ["Amedeo Modigliani", "Rene Magritte", ..."Albrecht Dürer"]*/
 
 function lotsOfArt(array){
+  const hundredpaintings =[];
+  for(let i=0; i<array.length; i++){
+    if (array[i].paintings >=100){
+      hundredpaintings.push(array[i].name);
+    }
+  }
+    return hundredpaintings;
+  }
+console.log(lotsOfArt(artists))
 
 
   /* Code here */
 
-}
+
 
 
 
